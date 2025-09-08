@@ -1716,8 +1716,10 @@ bool obs_scripting_load_python(const char *python_path)
 	add_hook_functions(py_obspython);
 	py_error();
 
+#ifdef ENABLE_UI
 	add_python_frontend_funcs(py_obspython);
 	py_error();
+#endif
 
 out:
 	/* ---------------------------------------------- */
