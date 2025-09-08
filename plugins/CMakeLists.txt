@@ -61,7 +61,7 @@ check_obs_browser()
 add_obs_plugin(obs-ffmpeg)
 add_obs_plugin(obs-filters)
 add_obs_plugin(obs-libfdk)
-add_obs_plugin(obs-nvenc PLATFORMS WINDOWS LINUX ARCHITECTURES x64 x86_64)
+# add_obs_plugin(obs-nvenc PLATFORMS WINDOWS LINUX ARCHITECTURES x64 x86_64)
 add_obs_plugin(obs-outputs)
 add_obs_plugin(
     obs-qsv11
@@ -79,6 +79,7 @@ add_obs_plugin(obs-webrtc)
 
 check_obs_websocket()
 
+add_obs_plugin(web-browser)
 add_obs_plugin(obs-x264)
 add_obs_plugin(oss-audio PLATFORMS FREEBSD OPENBSD)
 add_obs_plugin(rtmp-services)
